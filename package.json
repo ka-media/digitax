@@ -1,0 +1,34 @@
+{
+  "name": "kwuaar",
+  "version": "1.0.0",
+  "description": "Application for QRCode generation",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cjs": "^0.0.11",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "jsbarcode": "^3.11.5",
+    "mongoose": "^6.1.6",
+    "qrcode": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Brama Wireless",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ka-media/digitax.git"
+  },
+  "keywords": [
+    "digitax"
+  ],
+  "bugs": {
+    "url": "https://github.com/ka-media/digitax/issues"
+  },
+  "homepage": "https://github.com/ka-media/digitax#readme"
+}
