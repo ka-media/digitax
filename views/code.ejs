@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('layouts/header.ejs')-%>
+<body>
+     <%-include('layouts/nav.ejs')-%>
+      
+                    <div class="container">
+                        <form action="/" method="POST">
+                              <label for="driver">Driver</label>
+                              <input class="form-control" type="text" name="name" placeholder="Enter name of driver">
+                              <label for="vehicle">Plate. No.</label>
+                              <input class="form-control" type="text" name="name" placeholder="Enter vehicle reg. number">                                                   
+                             <div class="text-centre">
+                                  <input type="submit" value="Get Qrcode" class="btn btn-primary"><br>
+                             </div>                            
+                        </form>
+                    </div>
+               
+          <%if(data){%>
+               <div class="img-container">
+                    <h5>Scan QRCode</h5>
+                    <img src="<%=data%>" alt="">
+               </div>
+          <%}%>
+ 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+     <%-include('layouts/header.ejs')-%>
+<body>
+     <%-include('layouts/nav.ejs')-%>
+     <div class="container">
+          <h3>Digitax</h3>
+          <h6>Barcode Gen</h6>
+               <form action="" id="bar-form">
+                    <input type="text" name="txt-input" id="txt-input" placeholder="Name of Driver/Operator">
+                    <input type="text" name="plate" id="plate" placeholder="Vehicle Plate Number">
+                    <input type="number" name="amount" id="amount" placeholder="Amount Paid">
+                    <input type="date" name="" id="p-date">
+                    <input type="submit" id="submit" value="Generate Barcode">
+               </form>
+     </div>
+
+     <svg id="barcode">
+
+     </svg>
+
+     <%-include('layouts/footer.ejs')-%>
+     <!--<script src="JsBarcode.all.min.js" type="text/javascript"></script>-->
+     <script>
+          document.getElementById('submit').addEventListener('click', function() {
+               var text = document.getElementById('txt-input').value;
+               var plate = document.getElementById('plate').value;
+               var amount = document.getElementById('amount').value;
+               var payDate = document.getElementById('p-date').value;
+               //console.log('clicked')
+               JsBarcode('#barcode', `${text} ${plate} ${amount} ${payDate}`);
+               
+          });
+     </script>
+     <!--<script>
+          const barForm = document.getElementById('#bar-form');
+          const nameInput = document.getElementById('#name');
+          //const plateInput = document.getElementById('plate');
+          //const amountInput = document.getElementById('amount');
+
+          barForm.addEventListener('submit', onSubmit);
+          function onSubmi(e) {
+               e.preventDefault();
+               jsBarcode('#barcode',document.getElementById('barc').textContent = nameInput);
+          }
+          
+               //jsBarcode('#barcode', nameInput);
+         
+     </script>-->
+</body>
+</html>
