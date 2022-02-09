@@ -1,0 +1,150 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+body, html {
+     height: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+#card {
+     background-color: #000;
+     display: block;
+     width: 50%;
+     margin-top: 20px;
+}
+
+header {
+     display: block; 
+     top: 0;
+     left: 0; 
+     background-color: #5e0e94; 
+     font-weight: bold; 
+     color: #fff; 
+     position: fixed; width: 100%; 
+     padding: 5px; 
+     margin-bottom: 20px;
+}
+
+nav a:link,
+nav a:visited {
+     color: #fff;
+     text-decoration: none;
+}
+
+nav ul {
+     display: inline;
+     padding: 0;
+}
+
+nav ul li {
+     display: inline-block;
+     list-style: none;
+     margin: 0 5px 0 5px;
+}
+
+h1 {
+     text-align: center;
+     margin-top: 100px;
+}
+
+main {
+     margin: 20px;
+     padding: 50x;
+}
+
+.container {
+     margin-top: 75px;
+     width: 60%;
+     margin-left: 20%;
+     padding: 8px;
+     border: 1px solid #ddd;
+     box-shadow: 1px 1px 2px 1px#ddd;
+}
+
+h3 {
+     color: #5e0e94;
+     text-align: center;
+     font-weight: bold;
+     margin: 2px;
+}
+
+h5 {
+     font-size: 8px;
+     margin: 20px;
+     text-align: center;
+}
+
+h6 {
+     color: #5e0e94;
+     text-align: center;
+     margin: 0;
+}
+
+hr {
+     color: #5e0e94;
+     margin-top: 0;
+     width: 75%;
+     height: 0.1px;
+     margin-left: 12%;
+}
+
+input {
+     color: #5e0e94;
+     width: 100%;
+     height: 15px;
+     padding: 2px;
+     font-size: 9px;
+     border: 1px solid #5e0e94;
+     border-radius: 2px;
+     box-shadow: 1px 1px 2px 1px #ddd;
+}
+
+label {
+     color: #5e0e94;
+     font-size: 10px;
+}
+
+#submit {
+     background-color: #5e0e94;
+     font-weight: bolder;
+     color: #fff;
+     margin-bottom: 10px;
+     border: none;
+     border-radius: 2px;
+}
+
+.forgot {
+     text-align: center;
+}
+
+.forgot a {
+     color: #5e0e94;
+     text-decoration: none;
+     font-size: 0.5em;
+}
+
+details {
+     color: #5e0e94;
+}
+
+.about-detail {
+     background-color: #c37cf3;
+     color: #fff;
+     margin-top: 10px;
+     padding: 10px;
+     font-size: 12px;
+     text-align: center;
+}
+::marker {
+     display: none;
+}
+
+@media screen and (min-width: 678px) {
+     .container {
+          margin-top: 75px;
+          width: 25%;
+          margin-left: 37%;
+     }
+}
